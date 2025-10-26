@@ -44,6 +44,7 @@ namespace MklinkGUI
             this.labelTargetPath = new System.Windows.Forms.Label();
             this.labelLinkPath = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
+            this.btnChangeLanguage = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbLinkType
@@ -55,8 +56,8 @@ namespace MklinkGUI
             "Directory Junction",
             "Hard Link",
             "Symbolic Link"});
-            this.cbLinkType.Location = new System.Drawing.Point(6, 24);
-            this.cbLinkType.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLinkType.Location = new System.Drawing.Point(6, 48);
+            this.cbLinkType.Margin = new System.Windows.Forms.Padding(4);
             this.cbLinkType.MinimumSize = new System.Drawing.Size(169, 0);
             this.cbLinkType.Name = "cbLinkType";
             this.cbLinkType.Size = new System.Drawing.Size(169, 25);
@@ -65,8 +66,8 @@ namespace MklinkGUI
             // txtTargetPath
             // 
             this.txtTargetPath.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtTargetPath.Location = new System.Drawing.Point(6, 82);
-            this.txtTargetPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTargetPath.Location = new System.Drawing.Point(6, 106);
+            this.txtTargetPath.Margin = new System.Windows.Forms.Padding(4);
             this.txtTargetPath.Name = "txtTargetPath";
             this.txtTargetPath.Size = new System.Drawing.Size(429, 23);
             this.txtTargetPath.TabIndex = 1;
@@ -74,8 +75,8 @@ namespace MklinkGUI
             // txtLinkPath
             // 
             this.txtLinkPath.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txtLinkPath.Location = new System.Drawing.Point(6, 131);
-            this.txtLinkPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLinkPath.Location = new System.Drawing.Point(6, 155);
+            this.txtLinkPath.Margin = new System.Windows.Forms.Padding(4);
             this.txtLinkPath.Name = "txtLinkPath";
             this.txtLinkPath.Size = new System.Drawing.Size(429, 23);
             this.txtLinkPath.TabIndex = 2;
@@ -84,8 +85,8 @@ namespace MklinkGUI
             // 
             this.btnCreateLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateLink.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnCreateLink.Location = new System.Drawing.Point(183, 24);
-            this.btnCreateLink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCreateLink.Location = new System.Drawing.Point(183, 48);
+            this.btnCreateLink.Margin = new System.Windows.Forms.Padding(4);
             this.btnCreateLink.Name = "btnCreateLink";
             this.btnCreateLink.Size = new System.Drawing.Size(122, 25);
             this.btnCreateLink.TabIndex = 3;
@@ -97,8 +98,8 @@ namespace MklinkGUI
             // 
             this.btnRemoveLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemoveLink.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnRemoveLink.Location = new System.Drawing.Point(313, 24);
-            this.btnRemoveLink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemoveLink.Location = new System.Drawing.Point(313, 48);
+            this.btnRemoveLink.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemoveLink.Name = "btnRemoveLink";
             this.btnRemoveLink.Size = new System.Drawing.Size(122, 25);
             this.btnRemoveLink.TabIndex = 4;
@@ -109,8 +110,8 @@ namespace MklinkGUI
             // btnBrowseTarget
             // 
             this.btnBrowseTarget.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBrowseTarget.Location = new System.Drawing.Point(443, 82);
-            this.btnBrowseTarget.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowseTarget.Location = new System.Drawing.Point(443, 106);
+            this.btnBrowseTarget.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseTarget.Name = "btnBrowseTarget";
             this.btnBrowseTarget.Size = new System.Drawing.Size(122, 23);
             this.btnBrowseTarget.TabIndex = 5;
@@ -121,8 +122,8 @@ namespace MklinkGUI
             // btnBrowseLink
             // 
             this.btnBrowseLink.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btnBrowseLink.Location = new System.Drawing.Point(443, 131);
-            this.btnBrowseLink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBrowseLink.Location = new System.Drawing.Point(443, 155);
+            this.btnBrowseLink.Margin = new System.Windows.Forms.Padding(4);
             this.btnBrowseLink.Name = "btnBrowseLink";
             this.btnBrowseLink.Size = new System.Drawing.Size(122, 23);
             this.btnBrowseLink.TabIndex = 6;
@@ -134,7 +135,7 @@ namespace MklinkGUI
             // 
             this.labelLinkType.AutoSize = true;
             this.labelLinkType.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelLinkType.Location = new System.Drawing.Point(3, 3);
+            this.labelLinkType.Location = new System.Drawing.Point(3, 27);
             this.labelLinkType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLinkType.Name = "labelLinkType";
             this.labelLinkType.Size = new System.Drawing.Size(66, 17);
@@ -146,7 +147,7 @@ namespace MklinkGUI
             // 
             this.labelTargetPath.AutoSize = true;
             this.labelTargetPath.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelTargetPath.Location = new System.Drawing.Point(3, 61);
+            this.labelTargetPath.Location = new System.Drawing.Point(3, 85);
             this.labelTargetPath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTargetPath.Name = "labelTargetPath";
             this.labelTargetPath.Size = new System.Drawing.Size(78, 17);
@@ -158,7 +159,7 @@ namespace MklinkGUI
             // 
             this.labelLinkPath.AutoSize = true;
             this.labelLinkPath.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.labelLinkPath.Location = new System.Drawing.Point(3, 110);
+            this.labelLinkPath.Location = new System.Drawing.Point(3, 134);
             this.labelLinkPath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelLinkPath.Name = "labelLinkPath";
             this.labelLinkPath.Size = new System.Drawing.Size(63, 17);
@@ -169,8 +170,8 @@ namespace MklinkGUI
             // 
             this.btnAbout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAbout.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.btnAbout.Location = new System.Drawing.Point(443, 24);
-            this.btnAbout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAbout.Location = new System.Drawing.Point(443, 48);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(4);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(122, 25);
             this.btnAbout.TabIndex = 10;
@@ -178,12 +179,23 @@ namespace MklinkGUI
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
+            // btnChangeLanguage
+            // 
+            this.btnChangeLanguage.Location = new System.Drawing.Point(443, 12);
+            this.btnChangeLanguage.Name = "btnChangeLanguage";
+            this.btnChangeLanguage.Size = new System.Drawing.Size(122, 29);
+            this.btnChangeLanguage.TabIndex = 11;
+            this.btnChangeLanguage.Text = "Change Language";
+            this.btnChangeLanguage.UseVisualStyleBackColor = true;
+            this.btnChangeLanguage.Click += new System.EventHandler(this.btnChangeLanguage_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(571, 159);
+            this.ClientSize = new System.Drawing.Size(571, 187);
+            this.Controls.Add(this.btnChangeLanguage);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.labelLinkPath);
             this.Controls.Add(this.labelTargetPath);
@@ -198,7 +210,7 @@ namespace MklinkGUI
             this.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(587, 198);
             this.Name = "MainForm";
@@ -222,6 +234,7 @@ namespace MklinkGUI
         private System.Windows.Forms.Label labelTargetPath;
         private System.Windows.Forms.Label labelLinkPath;
         private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnChangeLanguage;
     }
 }
 
