@@ -141,7 +141,6 @@ namespace MklinkGUI
             this.labelLinkType.Size = new System.Drawing.Size(66, 17);
             this.labelLinkType.TabIndex = 7;
             this.labelLinkType.Text = "Link Type:";
-            this.labelLinkType.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelTargetPath
             // 
@@ -153,7 +152,6 @@ namespace MklinkGUI
             this.labelTargetPath.Size = new System.Drawing.Size(78, 17);
             this.labelTargetPath.TabIndex = 8;
             this.labelTargetPath.Text = "Target Path:";
-            this.labelTargetPath.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // labelLinkPath
             // 

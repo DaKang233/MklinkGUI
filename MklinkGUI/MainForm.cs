@@ -364,16 +364,6 @@ namespace MklinkGUI
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            // labelLinkType 点击事件处理程序（如果需要）
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-            // labelTargetPath 点击事件处理程序（如果需要）
-        }
-
         private void btnAbout_Click(object sender, EventArgs e)
         {
             AboutForm aboutForm = new AboutForm(this);
